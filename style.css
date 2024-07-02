@@ -1,0 +1,87 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar Styles */
+header {
+    background-color: #1e3a8a; /* Blue color */
+    padding: 1em 0;
+    color: #fff;
+}
+
+header .text-gray-600 {
+    color: #ffffff !important; /* Override text color */
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #ffeb3b; /* Yellow hover color */
+}
+
+header .title-font {
+    color: #fff;
+}
+
+header nav a {
+    color: #fff;
+}
+
+header nav a:hover {
+    color: #ffeb3b; /* Yellow hover color */
+}
+
+header svg {
+    background-color: #1e3a8a;
+}
+
+/* Button Styles */
+button {
+    background-color: #ec4899; /* Pink color */
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #db2777; /* Darker pink on hover */
+}
+
+button svg {
+    fill: none;
+    stroke: #fff;
+}
+@layer utilities {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+   /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+  }
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
